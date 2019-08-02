@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 //const User = require('./models/User');
 
 // Connection to the database "eventsApp"
-mongoose.connect('mongodb://localhost/eventsApp', { useNewUrlParser: true })
+mongoose.connect(process.env.DB, { useNewUrlParser: true })
   .then(() => {
     console.log('Connected to Mongo!');
   }).catch(err => {

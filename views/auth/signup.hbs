@@ -1,0 +1,12 @@
+<div id="signup-wrapper">
+   <form id="signup-form" action="/signup" method="POST">
+    <h2>Sign up</h2>
+    <input type="text" name="username" placeholder="Your username">
+    <input type="password" name="password" placeholder="********">
+    <button type="submit"><strong>Create account</strong></button>
+  </form>
+
+  {{#if errorMessage}}
+  <div class="error-message">{{ errorMessage }}</div>
+{{/if}}
+</div>

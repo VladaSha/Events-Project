@@ -1,0 +1,24 @@
+{{> navbar}}
+
+<h1>EventsAdvisor</h1>
+
+<div id="wrapping-div">
+    <form id="city-form" action="/city" method="get" onsubmit="return validateCity()">
+        <input type="text" id="citySearch" placeholder="e.g. Amsterdam" name="city"><br>
+        <button type="submit" id="submitBtn"><strong>GO</strong></button>     
+    </form>
+</div>
+
+{{!-- frontend validation --}}
+<script>
+    function validateCity(){
+        let city = document.getElementById("citySearch").value
+        if(city === ""){
+            alert("Please choose a city")
+            return false
+        } else {
+            return true
+        }
+    }
+</script>
+

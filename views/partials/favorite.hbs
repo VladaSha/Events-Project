@@ -1,0 +1,7 @@
+<div id="fav">
+    {{#if username}}
+        <a id="save-to-fav" onclick="return clearCookie()" href="/profile">Save to favorites</a>
+    {{else}}
+        <p>By the way... you have to log in before saving to favorites</p>
+    {{/if}}
+</div>

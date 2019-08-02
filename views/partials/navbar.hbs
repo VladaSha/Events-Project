@@ -1,0 +1,12 @@
+<nav>
+    {{#if username}}
+        <a href="/profile">{{username}} |</a>
+        <a href="/logout">Logout |</a>
+        <a href="/">EventsAdvisor</a>
+    {{else}}
+        <a href="/signup">Sign up |</a>
+        <a href="/login">Login |</a>
+        <a href="/">EventsAdvisor</a>
+
+    {{/if}}
+</nav>

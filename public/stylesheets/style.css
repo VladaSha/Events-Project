@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+/* NAVBAR */
+nav {
+  padding-left: 20px;
+  background-color:black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color:white
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+/* INDEX PAGE */
+body h1 {
+  text-align: center;
+  padding: 40px 0;
+  color: black;
+}
+
+#wrapping-div {
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/2R8JPQ1/night-light-amsterdam-famous-canal-panorama-4k-time-lapse-netherlands_e1xlvvg6zx__F0000.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+#city-form {
+  text-align: center;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#citySearch {
+  margin-right: 10px;
+  padding-left: 10px;
+  width: 30%;
+  height: 35px;
+  background-color: rgba(255, 255, 255, .7);
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+#submitBtn {
+  padding: 10px 13px;
+  border: none;
+  border-radius: 15px;
+  background-color:rgb(10, 10, 10, .8);
+  color: white;
+  outline: none;
+}
+
+#hidden {
+  display: none;
+}
+
+/* CITY PAGE */
+
+#form {
+  background-image: url("https://www.funktion-one.com/news/wp-content/uploads/2015/12/cielo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#timeSelect, #categorySelect {
+  width: 200px;
+  margin: 0 5px;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  font-weight: bold;
+}
+
+/* SYBCATEGORIES */
+
+#container {
+  padding: 0 300px;
+  margin-top: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 30px;
+}
+#container div {
+  width: 120px;
+  height: 30px;
+  margin: 10px 10px 0 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 15px;
+
+}
+
+#container p {
+  font-size: 12px;
+}
+
+/* ALL EVENTS */
+#events-container, #event-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#events-container .event {
+  width: 280px;
+  margin: 20px;
+}
+
+.event h2 {
+  margin-bottom: 15px;
+}
+
+.event:hover {
+  background-color: rgb(114, 114, 114, .5);
+}
+
+/* SPECIFIC EVENT */
+#event-container {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#event-name {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#event-container div {
+  margin-bottom: 10px;
+}
+
+/* BUY TICKET */
+#buy-ticket {
+  margin-top: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+/* SAVE TO FAVORITES */
+
+#fav-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  padding: 0;
+}
+
+#fav a {
+  margin: 30px 0;
+  padding: 10px 20px;
+  background-color: rgb(248, 101, 101);
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+#fav p {
+  color: rgb(248, 101, 101);
+  font-weight: bold;
+}
+
+/* LOGIN & SIGN-UP PAGE */
+
+#login-wrapper, #signup-wrapper {
+  height: 100vh;
+  background-image: url("https://static1.squarespace.com/static/56b9e4c62b8dde74a2a77987/t/56b9e712c6fc081fd55c1004/1455023905721/Blurred+Skyline+for+Blog.jpg?format=2500w");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+}
+
+#login-form, #signup-form {
+  height: 300px;
+  background-color: rgba(158, 158, 158, 0.6);
+  width: 23%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+#login-form input, #signup-form input {
+  width: 60%;
+  padding: 10px 20px;
+  margin: 15px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+#login-form button, #signup-form button {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  background-color: white;
+}
+
+#login-form p {
+  margin: 10px 0;
+}
+
+#login-form a {
+  text-decoration: none;
+  color: white;
+}
+
+/* PROFILE */
+
+#profile-wrapper {
+  height: 100vh;
+  background-image: url("http://theoldmarket.com/wp-content/uploads/2014/09/white-christmas-light-background.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-details {
+  background-color: rgba(158, 158, 158, 0.6);
+  width: 50%;
+}
+
+#profile-details h2, #profile-details #user {
+  padding-top: 30px;  
+  text-align: center;
+}
+
+#profile-details #user {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#favor-list {
+  padding-left: 20px;
+}
+
+#favor-list p {
+  margin: 20px 0;
+}
+
+/* IMAGES */
+.img-events {
+  height: 180px;
+  width: 280px;
+}

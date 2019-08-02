@@ -1,0 +1,14 @@
+{{> navbar}}
+
+<div id="profile-wrapper">
+    <div id="profile-details">
+        <h2>Profile</h2>
+        <p id="user">{{user.username}}</p>
+        <div id="favor-list">
+            <p>Favorites:</p>
+            {{#each user.favoriteEvents}}
+                <p>{{name}}</p>
+            {{/each}}
+        </div>
+    </div>
+</div>

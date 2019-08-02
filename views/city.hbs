@@ -1,0 +1,36 @@
+{{> navbar}}
+
+<div id="categories-container">
+    <form action="/city" method="get" id="form">
+        <input type="text" id="hidden" name="city" value={{city}}>
+        {{!-- <select id="timeSelect" onchange="onTimeChange()" name="time">
+                <option>Choose time</option>
+                <option value="today">Today</option>
+                <option value="tomorrow">Tomorrow</option>
+                <option value="this_weekend">This weekend</option>
+                <option value="this_week">This week</option>
+                <option value="next_week">Next week</option>
+                <option value="this_month">This month</option>
+                <option value="next_month">Next month</option>
+        </select> --}}
+        <select id="categorySelect" onchange="onSelectChange()" name="category">
+            <option>Choose category</option>
+            {{#each categories}}
+                <option value={{id}}>{{name}}</option>
+            {{/each}}
+        </select>
+    </form>
+</div>
+
+<div id="container"></div>
+
+<div id="events-container"></div>
+
+<div id="event-container">
+</div>
+<div id="fav-wrapper">{{> favorite }}</div>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+{{!-- frontend validation --}}
+<script src="/javascript/main_view.js"></script>
